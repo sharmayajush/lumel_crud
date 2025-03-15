@@ -1,0 +1,12 @@
+# Database configurations
+database:
+  driver: postgres
+  dbname: postgres
+  host: localhost
+  port: 5432
+  idleConns: 2
+  openConns: 10
+  schema: "lumel"
+  username: "postgres_user"
+  password: "postgres_password"
+  
