@@ -46,7 +46,7 @@ The Revenue API provides endpoints to fetch revenue-related data such as total r
 
 ## Schema Design
 
-![alt text](https://github.com/sharmayajush/lumel_crud/lumel_ss.png?raw=true)
+![alt text](https://github.com/sharmayajush/lumel_crud/blob/main/lumel_ss.png?raw=true)
 
 ## Code
 
