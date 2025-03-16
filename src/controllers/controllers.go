@@ -1,7 +1,6 @@
 package contollers
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -21,7 +20,6 @@ func DBRefresh(c *gin.Context) {
 }
 
 func GetTotalRevenue(c *gin.Context) {
-	fmt.Println("GetTotalRevenue API called")
 	startDate := c.Query("start_date")
 	endDate := c.Query("end_date")
 
