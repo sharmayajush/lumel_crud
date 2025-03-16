@@ -5,6 +5,7 @@ import (
 	"log"
 	"sync"
 
+	"github.com/sharmayajush/lumel_crud/src/model"
 	"github.com/spf13/viper"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -20,6 +21,10 @@ func GetInstance() *gorm.DB {
 		db = setupDatabase()
 	})
 	return db
+}
+
+func InitDBModels() {
+	db.AutoMigrate(&model.Customer{}, model.Product{}, &model.Order{})
 }
 
 func setupDatabase() *gorm.DB {

@@ -7,6 +7,10 @@ database:
   idleConns: 2
   openConns: 10
   schema: "lumel"
-  username: "postgres_user"
-  password: "postgres_password"
+  username: "postgres"
+  password: "postgres"
+
+#path for csv file
+csv:
+  path: "sample.csv"
   
