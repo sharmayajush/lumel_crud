@@ -8,7 +8,7 @@ The Revenue API provides endpoints to fetch revenue-related data such as total r
 
 ### 1. Gin Framework
 
-- Migrated from Gorilla Mux to Gin for better performance and simplicity.
+- Used Gin for better performance and simplicity.
 
 - Provides built-in middleware support for logging, recovery, and routing.
 
