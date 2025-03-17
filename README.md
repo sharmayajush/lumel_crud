@@ -14,13 +14,13 @@ The Revenue API provides endpoints to fetch revenue-related data such as total r
 
 ### 2. Database Design
 
-- Uses a relational database with tables orders, customers and products.
+- Uses a relational database, postgres with tables orders, customers and products in schema named lumel.
 
 - orders table contains sales data including product_id, quantity, date_of_sale, and discount.
 
 - products table contains product details including id, name, and price.
 
-- customers table containe customer specific details
+- customers table contains customer specific details
 
 ### 3. Cron Job for Data Refresh
 
@@ -64,6 +64,7 @@ go mod tidy
 go run main.go
 ```
 - this will start the go program and will start the api server and cron job for database refreshing.
+- You can make changes in postgres configs and give csv file path using conf/app.yaml
 
 ## API Documentation
 
